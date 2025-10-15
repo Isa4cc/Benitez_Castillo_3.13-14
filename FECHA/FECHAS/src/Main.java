@@ -15,7 +15,6 @@ public class Main {
         /**Creación del objeto*/
         Fecha fecha1 = new Fecha();
         fecha1.obtenerfecha();
-        JOptionPane.showMessageDialog(null, "La fecha del día es: "+ fecha1.getMes() + "/" +
-                fecha1.getDia() + "/" + fecha1.getAnio());
+        JOptionPane.showMessageDialog(null, "La fecha del día es: " + fecha1.mostrarFecha());
     }
 }
