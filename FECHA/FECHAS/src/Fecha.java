@@ -44,13 +44,17 @@ public class Fecha {
     /**Métodos de programador*/
 
     public void obtenerfecha() {
-        int mes = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el mes"));
         int dia = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el día"));
+        int mes = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el mes"));
         int ani = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingrese el año"));
 
         setMes(mes);
         setDia(dia);
         setAnio(ani);
+    }
+
+    public String mostrarFecha(){
+        return getDia() + "/" + getMes() + "/" + getAnio();
     }
 
 }
